@@ -23,14 +23,14 @@ h2 {
   font-size: 18px;
   color: #3a4151;
 }
-.background-image{
+.checkout__background{
   position:relative;
   width: 100%;
   height: 220px;
 
 }
 @media (min-width: 1351px){
-.container {
+.checkout__content {
     display: flex;
     flex-direction: row;
     margin: 0px auto;
@@ -42,7 +42,7 @@ h2 {
     overflow: hidden;
   }
 }
-.checkout-container{
+.checkout__header{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -53,11 +53,11 @@ h2 {
   color: white!important;
 }
 
-.checkout-h1{
+.checkout__title{
   justify-items: center;
   font-size: 24px;
 }
-.checkout-count-itens{
+.check__item-count{
   border-radius: 20px;
   font-size: 12px;
   background-color: #1d1d1f;
@@ -65,7 +65,7 @@ h2 {
   padding: 5px 10px;
 }
 @media (min-width: 721px) {
-  .container-esquerdo{
+  .checkout__products{
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -73,7 +73,7 @@ h2 {
     background-color: #e6e7eb;
   }
   
-  .container-direito{
+  .checkout__form{
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -94,7 +94,7 @@ h2 {
   flex-direction: column;
 }
 
-.produto-unitario {
+.product-list__item {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -106,7 +106,7 @@ h2 {
   height: 100%;
 }
 
-.teste1-right {
+.form__field {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
@@ -115,15 +115,15 @@ h2 {
 
 }
 
-.teste2-right {
+.form__subfield {
   width: 100%;
 }
 
-.postal-code {
+.form__postal-code {
   margin-left: 20px;
 }
 
-.input {
+.form__input {
   width: 100%;
   height: 50px;
   font-size: 18px;
@@ -149,7 +149,7 @@ h2 {
   border-radius: 8px;
 }
 
-.top_box {
+.product-list {
   height: 65%;
 }
 
@@ -160,21 +160,21 @@ h2 {
 
 }
 
-.bottom_box_left {
+.checkout__totals {
   display: flex;
   flex-direction: row;
   height: 20%;
 }
 
-.bottom_left {
+.totals__labels {
   width: 80%;
 }
 
-.bottom_right {
+.totals__values {
   width: 20%;
 }
 
-.img-produto {
+.product-list__image {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -186,7 +186,7 @@ h2 {
   background-color: white;
 }
 
-.box-produto-cor-quantidade {
+.product-list__details {
   width: 60%;
   height: 100%;
 }
@@ -195,7 +195,7 @@ h2 {
   width: 20%;
 }
 
-.teste1-dualbox {
+.form__field--dual {
   display: flex;
   flex-direction: row;
 }
@@ -210,7 +210,7 @@ h2 {
   color: #3a4151;
 }
 
-.total_cash {
+.totals__value {
   height: 33.33%;
   color: #3a4151;
   direction: rtl;
@@ -225,43 +225,43 @@ h2 {
   margin-left: 10px;
 }
 
-.box-preco-close-icon {
+.product-list__price-actions {
   position: relative;
   width: 20%;
 }
 
-.button-close-icon {
+.product-list__remove-btn {
   cursor: pointer;
   position: absolute;
   bottom: 20px;
   right: 0;
   background: content-box;
 }
-.horizontal-line{
+.checkout__divider{
   width: 100%;
   border-bottom: 1px solid #d2d5da;
   margin-bottom: 20px;
 }
 
-.preco {
+.product-list__price {
   position: absolute;
   right: 0;
   top: 0;
 }
 
-.close-icon {
+.product-list__remove-icon {
   width: 30px;
   height: 30px;
 }
-.nome-produto{
+.product-list__name{
   margin-bottom: 10px;
 }
-.cor-produto{
+.product-list__color{
   margin-bottom: 30px;
   color: #3a4151;
 }
 @media (max-width: 1350px) and (min-width: 721px){
-  .container{
+  .checkout__content{
   display: flex;
   flex-direction: row;
   margin: 0px auto;
@@ -276,7 +276,7 @@ h2 {
 }
 
 @media (max-width: 720px) and (min-width: 320px){
-  .container{
+  .checkout__content{
   margin: 50px auto;
   width: 95%;
   max-width: 720px;
@@ -284,16 +284,16 @@ h2 {
   border-radius: 15px;
   overflow: hidden;
   }
-  .background-image{
+  .checkout__background{
   position:relative;
   width: 100%;
   height: 220px;
   }
-  .container-esquerdo{
+  .checkout__products{
     padding: 30px;
     background-color: #e6e7eb;
   }
-  .container-direito{
+  .checkout__form{
     padding: 30px;
     height: 450px;
     box-shadow:
